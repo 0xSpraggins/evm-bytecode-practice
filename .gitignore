@@ -1,0 +1,6 @@
+# IDE Settings
+.DS_Store
+.idea
+
+# Environment Variables
+.env

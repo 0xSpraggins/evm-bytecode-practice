@@ -1,0 +1,33 @@
+// This is a contract that deploys a hello world contract in spanish
+//     using only EVM bytecode
+
+// Contract has 29 bytes (1d)
+60 1d // copy num of bytes
+60 0c // code position (num bytes this block takes)
+60 00 // memory position
+39 
+60 1d // return num of bytes
+60 00 // memory positon
+f3
+
+// First 32 bytes of string
+60 20 
+60 00
+52
+
+// Second 32 bytes of string
+60 0a
+60 20
+52
+
+// Third 32 bytes of string
+69 68 6f 6c 61 20 6d 75 6e 64 6f
+60 40
+52
+
+// State the position we want returned
+60 60
+60 00
+
+// Return the string
+f3
